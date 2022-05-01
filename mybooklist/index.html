@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist v0.1</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book List</h1>
+        <!-- form for adding a book -->
+        <div class="row">
+            <form id="input-form">
+                <div class="input-title-div">
+                    <div class="row" id="book-title">
+                        <label for="book-title-input">Book Title</label>
+                        <input type="text" name="book-title-input" id="book-title-input" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="row" id="input-author-div">
+                    <label for="book-author">Book Author</label>
+                    <input type="text" name="book-author" id="book-author" style="width: 100%;">
+                </div>
+                <div class="row" id="input-isbn-div">
+                    <label for="book-isbn">ISBN</label>
+                    <input type="text" name="book-isbn" id="isbn" style="width: 100%" ;>
+                </div>
+                <div class="row" id="btn-add-book">
+                    <button type="submit" >Add Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Table of books-->
+    <div class="container" id="result-container">
+        <div class="row">
+            <div class="inventory">
+                <table class="u-full-width">
+                    <thead>
+                        <th>Book Title</th>
+                        <th>Book Author</th>
+                        <th>IBAN</th>
+                        <th>Remove</th>
+                    </thead>
+                    <tbody id="book-list">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="./app.js"></script>
+</body>
+
+</html>
